@@ -17,4 +17,3 @@ if muse:
     selmuse = musename.index(selmuse)
     muse = muse[selmuse]['address']
     muselsl.stream(muse)
-    muselsl.view()
