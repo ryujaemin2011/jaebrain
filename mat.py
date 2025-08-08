@@ -1,7 +1,19 @@
 import matplotlib.pyplot as plt
-from time import sleep
+import random
 
-for i in range(10):
-    plt.plot(i,1)
-    plt.show()
-    sleep(1)
+xd = []
+yd = []
+
+for i in range(1000):
+    xd.append(random.randrange(1,10))
+    yd.append(random.randrange(1,10))
+
+print(xd)
+print(yd)
+
+for i in xd:
+    x = xd[i-10:i]
+    y = yd[i-10:i]
+    plt.clf()
+    plt.plot(x,y,'r')
+    plt.pause(0.01)

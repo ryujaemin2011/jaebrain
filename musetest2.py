@@ -5,4 +5,5 @@ import time
 output_file = 'EEG_recording.csv'
 
 # EEG 데이터 기록 시작
-record(duration=1, filename=output_file)
+for i in range(10):
+    record(duration=1)
